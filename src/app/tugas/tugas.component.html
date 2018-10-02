@@ -1,0 +1,14 @@
+<!-- <p>
+  tugas works!
+</p> -->
+  <label>User Name</label>
+<input
+  type="text"
+  class="form-control"
+  [(ngModel)]="UserName">
+<p>{{ UserName }}</p>
+<button 
+  class="btn btn-primary" 
+  [disabled]="UserName === ''"
+  (click)="onReset()">Add User</button>
+<p>{{ UserCreationStatus }}</p>

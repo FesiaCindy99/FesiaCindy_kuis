@@ -1,0 +1,12 @@
+
+<button 
+  class="btn btn-primary" 
+  (click)="onClick()"><b>Tampilkan Detail</b>
+</button>
+
+<p *ngIf="i%2 === 0">{{ detail }}</p>
+<p *ngFor="let i of log"
+      [ngStyle]="{backgroundColor: i >= 5 ? 'blue' : 'transparant' }"
+      [ngClass]="{'next': i >= 5}">
+      {{ i }}
+</p>
